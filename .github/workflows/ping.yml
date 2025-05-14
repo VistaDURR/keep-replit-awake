@@ -2,7 +2,7 @@ name: Ping Replit App
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # Ogni 5 minuti
+    - cron: '* * * * *'  # Ogni 5 minuti
   workflow_dispatch:
 
 jobs:
