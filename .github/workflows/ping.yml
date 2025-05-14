@@ -3,7 +3,7 @@ name: Ping Replit App
 on:
   schedule:
     - cron: '*/5 * * * *'  # Ogni 5 minuti
-  workflow_dispatch:        # Permette anche di avviare manualmente il workflow
+  workflow_dispatch:
 
 jobs:
   ping:
@@ -12,3 +12,4 @@ jobs:
     steps:
       - name: Send HTTP request to Replit app
         run: curl -s https://durrdentalservice.replit.app/
+
